@@ -4,6 +4,10 @@ R scripts for single-cell RNA seq analysis in:
 
 [Hartmann F, Gorski DJ, *et al.* SMC-Derived Hyaluronan Modulates Vascular SMC Phenotype in Murine Atherosclerosis. Circ Res. 2021 Nov 12;129(11):992-1005.](https://doi.org/10.1161/CIRCRESAHA.120.318479)
 
+<p align="center">
+  <img src="/schematic-overview-edit.png" width="500">
+</p>
+
 ## Abstract
 
 RATIONALE:  Plaque  instability  remains  poorly  understood  and  new  therapeutic  approaches  to  reduce  plaque  rupture  and  subsequent clinical events are of great interest. Recent studies revealed an important role of phenotypic switching of smooth muscle cells (SMC) in controlling plaque stability, including ECM (extracellular matrix) deposition.
