@@ -4,7 +4,7 @@ This repository contains R scripts for single-cell RNA seq analysis in:
 
 [Hartmann F, Gorski DJ, *et al.* SMC-Derived Hyaluronan Modulates Vascular SMC Phenotype in Murine Atherosclerosis. Circ Res. 2021 Nov 12;129(11):992-1005.](https://doi.org/10.1161/CIRCRESAHA.120.318479)
 
-Sequencing data can be found at Gene Expression Omnibus: [GSE182795](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/browse/)
+Sequencing data can be found at GEO accession [GSM5537130](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537130) and [GSM5537131](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537131)
 
 <p align="center">
   <img src="/schematic-overview-edit.png" width="1000">
