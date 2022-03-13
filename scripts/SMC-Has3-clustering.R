@@ -51,7 +51,7 @@ obj <- subset(x = obj,
 ## SCTransform, integration and clustering----
 obj_list <- SplitObject(obj, split.by = "orig.ident")
 obj_list_sct <- list()
-for (i in seq_len(obj_list)) {
+for (i in 1:(length(obj_list))) {
    obj_list_sct[[i]] <- SCTransform(obj_list[[i]],
                                   vars.to.regress = "percent.mt",
                                   return.only.var.genes = F,
