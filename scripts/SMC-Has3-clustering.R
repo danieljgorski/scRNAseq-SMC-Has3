@@ -97,7 +97,6 @@ obj <- ScaleData(obj,
                  features = all_genes,
                  vars.to.regress = "percent.mt",
                  verbose = T)
-levels(obj)
 
 ## Save integrated object----
 save(obj, file = "results/objects/obj.Rdata")
