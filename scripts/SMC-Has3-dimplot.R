@@ -28,8 +28,10 @@ p <- DimPlot(obj,
 p <- LabelClusters(plot = p,
               id = "ident",
               repel = T,
-              force = 10,
-              size = 6)
+              force = 20,
+              size = 6,
+              nudge_x = -9,
+              nudge_y = 0)
 pdf(file = "results/dimplots/dimplot.pdf",
     width = 6,
     height = 6,
