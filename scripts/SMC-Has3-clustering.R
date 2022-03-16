@@ -1,9 +1,9 @@
 ## Load libraries----
-library(Seurat)
+library(Seurat) # v3.1.5
 
 ## Read in 10x outputs and create Seurat objects----
-lesion_wt <- Read10X(data.dir = "data/WT_sample_filtered_feature_bc_matrix")
-lesion_ko <- Read10X(data.dir = "data/KO_sample_filtered_feature_bc_matrix")
+lesion_wt <- Read10X(data.dir = "data/WT_filtered_feature_bc_matrix")
+lesion_ko <- Read10X(data.dir = "data/KO_filtered_feature_bc_matrix")
 lesion_wt <- CreateSeuratObject(counts = lesion_wt,
                                 project = "SMC_Has3_WT_lesion",
                                 min.cells = 3,
@@ -97,6 +97,13 @@ obj <- ScaleData(obj,
                  features = all_genes,
                  vars.to.regress = "percent.mt",
                  verbose = T)
+
+## Add published embeddings for consistency----
+load("data/published_embeddings.Rdata")
+obj[["published_umap"]] <- CreateDimReducObject(
+   embeddings = published_embeddings,
+   key = "pubumap_",
+   assay = DefaultAssay(obj))
 
 ## Save integrated object----
 save(obj, file = "results/objects/obj.Rdata")
