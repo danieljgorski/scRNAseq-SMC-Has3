@@ -5,14 +5,6 @@ library(multtest)
 ## Load Seurat object----
 load("results/objects/obj.Rdata")
 
-## List of all genes----
-all_genes <- rownames(obj)
-write.table(all_genes,
-            file = "results/cluster_markers/all_genes.txt",
-            row.names = F,
-            col.names = F,
-            quote = F)
-
 ## Find conserved cluster markers----
 Idents(obj) <- "seurat_clusters"
 DefaultAssay(obj) <- "RNA"
