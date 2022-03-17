@@ -46,9 +46,9 @@ for (i in levels(obj)) {
     ont = "BP",
     keyType = "SYMBOL",
     pAdjustMethod = "bonferroni",
-     pvalueCutoff  = 0.05,
-     qvalueCutoff  = 0.05,
-     readable = F)
+    pvalueCutoff  = 0.05,
+    qvalueCutoff  = 0.05,
+    readable = F)
   p <- dotplot(ora,
           showCategory = 20,
           label_format = 30,
