@@ -13,15 +13,14 @@ idents_list <- levels(obj)
 conserved_markers_list <- list()
 for (i in idents_list) {
   cluster <- i
-  markers <- FindConservedMarkers(
-    obj,
-    ident.1 = cluster,
-    min.pct = 0.25,
-    logfc.threshold = 0.25,
-    only.pos = T,
-    assay = "RNA",
-    slot = "data",
-    grouping.var = "genotype")
+  markers <- FindConservedMarkers(obj,
+                                  ident.1 = cluster,
+                                  min.pct = 0.25,
+                                  logfc.threshold = 0.25,
+                                  only.pos = T,
+                                  assay = "RNA",
+                                  slot = "data",
+                                  grouping.var = "genotype")
   markers <- markers[markers$WT_p_val_adj < 0.05, ]
   markers <- markers[markers$KO_p_val_adj < 0.05, ]
   markers$cluster <- i
@@ -39,16 +38,15 @@ write.csv(conserved_markers,
 ## Gene ontology BP over-representation analysis of cluster markers----
 for (i in levels(obj)) {
   goi <- conserved_markers[conserved_markers$cluster == i, ]$gene
-  ora <- enrichGO(
-    gene =  goi,
-    universe = rownames(obj),
-    OrgDb = org.Mm.eg.db,
-    ont = "BP",
-    keyType = "SYMBOL",
-    pAdjustMethod = "bonferroni",
-    pvalueCutoff  = 0.05,
-    qvalueCutoff  = 0.05,
-    readable = F)
+  ora <- enrichGO(gene =  goi,
+                  universe = rownames(obj),
+                  OrgDb = org.Mm.eg.db,
+                  ont = "BP",
+                  keyType = "SYMBOL",
+                  pAdjustMethod = "bonferroni",
+                  pvalueCutoff  = 0.05,
+                  qvalueCutoff  = 0.05,
+                  readable = F)
   p <- dotplot(ora,
           showCategory = 20,
           label_format = 30,
