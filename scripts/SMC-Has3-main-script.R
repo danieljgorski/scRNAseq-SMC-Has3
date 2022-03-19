@@ -1,5 +1,9 @@
 # make directories
-output_dirs <- c("results", "results/objects", "results/dimplots", "results/cluster_markers")
+output_dirs <- c(
+  "results",
+  "results/objects",
+  "results/dimplots",
+  "results/cluster_markers")
 
 for (i in output_dirs) {
   if (!dir.exists(i)) {
