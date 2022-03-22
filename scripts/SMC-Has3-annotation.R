@@ -1,6 +1,5 @@
 ## Load libraries----
 library(Seurat)
-library(multtest)
 
 ## Load Seurat object----
 load("results/objects/obj.Rdata")
