@@ -7,7 +7,7 @@ This repository contains R scripts for the single-cell RNA-seq analysis in:
 Sequencing data can be found at GEO accession [GSM5537130](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537130) and [GSM5537131](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537131)
 
 <p align="center">
-  <img src="/schematic-overview-edit.png" width="1000">
+  <img src="/schematic_overview_edit.png" width="1000">
 </p>
 
 ## Abstract
