@@ -15,9 +15,9 @@ dimcols <- c(
   "#6FA7A0",
   "#7572AD")
 p <- DimPlot(obj, label = F, pt.size = 1, cols = dimcols) +
-xlab("UMAP 1") +
-ylab("UMAP 2") +
-theme(panel.border = element_rect(colour = "black", size = 1),
+  xlab("UMAP 1") +
+  ylab("UMAP 2") +
+  theme(panel.border = element_rect(colour = "black", size = 1),
       axis.ticks = element_blank(),
       axis.text = element_blank(),
       legend.text = element_text(size = 20),
