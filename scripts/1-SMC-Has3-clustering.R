@@ -40,9 +40,9 @@ sum(obj[["percent.hemo"]])
 obj <- subset(
   x = obj,
   subset = nFeature_RNA > 800 &
-  nFeature_RNA < 5000 &
-  percent.mt < 10 &
-  percent.hemo < 5
+    nFeature_RNA < 5000 &
+    percent.mt < 10 &
+    percent.hemo < 5
 )
 
 ## SCTransform, integration and clustering----
