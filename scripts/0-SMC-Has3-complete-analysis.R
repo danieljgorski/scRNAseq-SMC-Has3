@@ -3,7 +3,7 @@ output_dirs <- c(
   "results",
   "results/objects",
   "results/dimplots",
-  "results/cluster_markers"
+  "results/cluster-markers"
 )
 
 for (i in output_dirs) {
@@ -18,5 +18,5 @@ for (i in output_dirs) {
 # run analysis in order
 source("scripts/1-SMC-Has3-clustering.R")
 source("scripts/2-SMC-Has3-annotation.R")
-source("scripts/3-SMC-Has3-dimplot.R")
+source("scripts/3-SMC-Has3-dimplots.R")
 source("scripts/4-SMC-Has3-cluster-markers.R")
