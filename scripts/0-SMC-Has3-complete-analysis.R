@@ -7,7 +7,8 @@ output_dirs <- c(
   "results/genes-of-interest",
   "results/composition",
   "results/differential-gene-expression",
-  "results/volcano-plots"
+  "results/volcano-plots",
+  "results/ora"
 )
 
 for (i in output_dirs) {
@@ -28,3 +29,4 @@ source("scripts/5-SMC-Has3-genes-of-interest.R")
 source("scripts/6-SMC-Has3-composition.R")
 source("scripts/7-SMC-Has3-differential-gene-expression.R")
 source("scripts/8-SMC-Has3-volcano-plots.R")
+source("scripts/9-SMC-Has3-ora.R")
