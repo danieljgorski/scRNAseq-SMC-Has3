@@ -13,11 +13,13 @@ Analysis was done using Seurat v3.1.5
 </p>
 
 ## Abstract
-
+<p style='text-align: justify;'>
 RATIONALE:  Plaque  instability  remains  poorly  understood  and  new  therapeutic  approaches  to  reduce  plaque  rupture  and  subsequent clinical events are of great interest. Recent studies revealed an important role of phenotypic switching of smooth muscle cells (SMC) in controlling plaque stability, including ECM (extracellular matrix) deposition.
 
+<p style='text-align: justify;'>
 OBJECTIVE: The aim of this study was to elucidate the role of hyaluronan derived from SMC–hyaluronan synthase 3 (Has3), in phenotypic switching and plaque stability in an animal model of atherosclerosis.
 
+<p style='text-align: justify;'>
 METHODS  AND  RESULTS:  A  mouse  line  with  SMC-specific  deletion  of  Has3  and  simultaneous  SMC-lineage  tracing  (eYFP [enhanced yellow fluorescent protein]) on an Apoe−/− background was used. Lineage tracing of SMC with eYFP revealed that SMC-specific deletion of Has3 significantly increased the number of LGALS3+ (galectin-3) transition state SMC and decreased ACTA2+ (alpha-smooth muscle actin) SMC. Notably, SMC-Has3 deletion led to significantly increased collagen deposition  and  maturation  within  the  fibrous  cap  and  the  whole  lesion,  as  evidenced  by  picrosirius  red  staining  and  LC-PolScope  analysis.  Single-cell  RNA  sequencing  of  brachiocephalic  artery  lesions  demonstrated  that  the  loss  of  SMC-Has3 enhanced the transition of SMC to a Lgals3+, ECM-producing phenotype with elevated acute-phase response gene expression. Experiments using cultured murine aortic SMC revealed that blocking CD44 (cluster of differentiation-44), an important hyaluronan binding receptor, recapitulated the enhanced acute-phase response, and synthesis of fibrous ECM.
-
+<p style='text-align: justify;'>
 CONCLUSIONS: These studies provide evidence that the deletion of SMC-Has3 results in an ECM-producing transition state SMC phenotype (characterized by LGALS3+ expression), likely via reduced CD44 signaling, resulting in increased collagen formation and maturation, an index consistent with increased plaque stability.
