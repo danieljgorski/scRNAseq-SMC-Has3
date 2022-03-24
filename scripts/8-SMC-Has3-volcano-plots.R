@@ -1,4 +1,4 @@
-## Load libraries----
+## Load libraries and functions----
 library(Seurat)
 library(ggplot2)
 library(dplyr)
