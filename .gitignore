@@ -5,4 +5,3 @@
 data/WT_filtered_feature_bc_matrix
 data/KO_filtered_feature_bc_matrix
 results/
-lesion.integrated-reference.R
