@@ -4,7 +4,8 @@ output_dirs <- c(
   "results/objects",
   "results/dimplots",
   "results/cluster-markers",
-  "results/genes-of-interest"
+  "results/genes-of-interest",
+  "results/composition"
 )
 
 for (i in output_dirs) {
@@ -22,3 +23,4 @@ source("scripts/2-SMC-Has3-annotation.R")
 source("scripts/3-SMC-Has3-dimplots.R")
 source("scripts/4-SMC-Has3-cluster-markers.R")
 source("scripts/5-SMC-Has3-genes-of-interest.R")
+source("scripts/6-SMC-Has3-composition.R")
