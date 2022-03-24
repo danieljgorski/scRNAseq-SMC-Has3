@@ -30,7 +30,7 @@ p <- LabelClusters(plot = p,
   size = 6,
   nudge_x = -9,
   nudge_y = 0)
-pdf(file = "results/dimplots/dimplot.pdf",
+pdf(file = "results/dimplots/DimPlot.pdf",
 width = 6,
 height = 6,
 useDingbats = F)
@@ -50,7 +50,7 @@ p <- DimPlot(obj, group.by = "genotype",
         legend.position = c(0.075, 0.15),
         legend.text = element_text(size = 20),
         plot.title = element_blank())
-pdf(file = "results/dimplots/dimplot_genotype.pdf",
+pdf(file = "results/dimplots/DimPlot_genotype.pdf",
     width = 6,
     height = 6,
     pointsize = 12,
