@@ -33,35 +33,6 @@ write.csv(conserved_markers,
   row.names = F
 )
 
-## Gene ontology BP over-representation analysis of cluster markers----
-for (i in levels(obj)) {
-  goi <- conserved_markers[conserved_markers$cluster == i, ]$gene
-  ora <- enrichGO(
-    gene = goi,
-    universe = rownames(obj),
-    OrgDb = org.Mm.eg.db,
-    ont = "BP",
-    keyType = "SYMBOL",
-    pAdjustMethod = "bonferroni",
-    pvalueCutoff = 0.05,
-    qvalueCutoff = 0.05,
-    readable = F
-  )
-  p <- dotplot(ora,
-    showCategory = 20, label_format = 30, orderBy = "x"
-  ) +
-    labs(title = paste0(i, " marker gene ORA")) +
-    theme(legend.position = "right", legend.box = "vertical")
-  pdf(
-    file = paste0("results/cluster-markers/", i, "_marker_gene_ORA.pdf"),
-    width = 6,
-    height = 8,
-    useDingbats = F
-  )
-  print(p)
-  dev.off()
-}
-
 ## Dotplot of conserved marker genes----
 
 # select bottom combined p value
@@ -86,7 +57,7 @@ p <- DotPlot(
   geom_vline(xintercept = c(10.5, 20.5, 30.5, 40.5, 50.5, 60.5))
 
 pdf(
-  file = "results/cluster-markers/dotplot_top10_genotype.pdf",
+  file = "results/cluster-markers/DotPlot_top10_genotype.pdf",
   height = 5,
   width = 18,
   useDingbats = F
