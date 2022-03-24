@@ -49,6 +49,6 @@ pdf(file="results/composition/cluster_composition.pdf",
     height=4,
     pointsize = 12,
     useDingbats = F)
-p 
+print(p) 
 dev.off()
 
