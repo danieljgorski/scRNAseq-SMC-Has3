@@ -1,6 +1,6 @@
 # scRNAseq-SMC-Has3
 
-This repository contains the full single-cell RNA-seq analysis published in our manuscript:
+This repository contains the complete single-cell RNA-seq analysis published in our manuscript:
 
 [Hartmann F, Gorski DJ, _et al._ SMC-Derived Hyaluronan Modulates Vascular SMC Phenotype in Murine Atherosclerosis. Circ Res. 2021 Nov 12;129(11):992-1005.](https://doi.org/10.1161/CIRCRESAHA.120.318479)
 
