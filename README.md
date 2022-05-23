@@ -6,16 +6,12 @@ This repository contains the full single-cell RNA-seq analysis published in our 
 
 Sequencing data can be found at GEO accession [GSM5537130](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537130) and [GSM5537131](https://www-ncbi-nlm-nih-gov.ezproxy.u-pec.fr/geo/query/acc.cgi?acc=GSM5537131)
 
+## Abstract
+
 <p align="center">
-  <img src="/DimPlot.png" width="32%">
-  <img src="/DimPlot_genotype.png" width="32%">
-  <img src="/VolcanoPlot_mod_genotype.png" width="32%">
-</p>
-<p align="center">
-  <img src="/DotPlot_top10_genotype.png" width="100%">
+  <img src="/schematic_overview_edit.png" width="1000">
 </p>
 
-## Abstract
 <p style='text-align: justify;'>
 RATIONALE:  Plaque  instability  remains  poorly  understood  and  new  therapeutic  approaches  to  reduce  plaque  rupture  and  subsequent clinical events are of great interest. Recent studies revealed an important role of phenotypic switching of smooth muscle cells (SMC) in controlling plaque stability, including ECM (extracellular matrix) deposition.
 
@@ -27,12 +23,7 @@ METHODS  AND  RESULTS:  A  mouse  line  with  SMC-specific  deletion  of  Has3  
 <p style='text-align: justify;'>
 CONCLUSIONS: These studies provide evidence that the deletion of SMC-Has3 results in an ECM-producing transition state SMC phenotype (characterized by LGALS3+ expression), likely via reduced CD44 signaling, resulting in increased collagen formation and maturation, an index consistent with increased plaque stability.
 
-<p align="center">
-  <img src="/schematic_overview_edit.png" width="1000">
-</p>
-
 ## Analysis
-
 The following analysis was performed with [Seurat](https://satijalab.org/seurat/index.html) v3.1.5, it can be installed with the following command:
 
 ```R
@@ -50,5 +41,10 @@ scRNAseq-SMC-Has3/data
 ```
 
 Running `0-SMC-Has3-complete-analysis.R` will create the necessary results directories and run each analysis step in order. Otherwise, each script can be run individually, starting from `1-SMC-Has3-clustering.R`
+
+<p align="justify">
+  <img src="/DimPlot.png" width="24%">
+  <img src="/DotPlot_top10_genotype.png" width="75%">
+</p>
 
 For consistency, we have incorporated the published UMAP embeddings in the workflow. However, if you would like to process the data on your own, the cells included after pre-processing, their embeddings, annotations and genotypes can be found in the `final_cells.csv` file.
