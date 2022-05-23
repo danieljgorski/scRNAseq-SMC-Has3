@@ -42,9 +42,8 @@ scRNAseq-SMC-Has3/data
 
 Running `0-SMC-Has3-complete-analysis.R` will create the necessary results directories and run each analysis step in order. Otherwise, each script can be run individually, starting from `1-SMC-Has3-clustering.R`
 
-<p align="justify">
-  <img src="/DimPlot.png" width="24%">
-  <img src="/DotPlot_top10_genotype.png" width="75%">
+<p align="center">
+  <img src="/dimplot_dotplot.png" width="100%">
 </p>
 
 For consistency, we have incorporated the published UMAP embeddings in the workflow. However, if you would like to process the data on your own, the cells included after pre-processing, their embeddings, annotations and genotypes can be found in the `final_cells.csv` file.
