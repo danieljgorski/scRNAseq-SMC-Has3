@@ -36,6 +36,7 @@ To automatically recreate the published analysis and results, clone this reposit
 scRNAseq-SMC-Has3/data
   KO_filtered_feature_bc_matrix
   WT_filtered_feature_bc_matrix
+  final_cells.csv
   gene_signatures.csv
   published_embeddings.Rdata
 ```
